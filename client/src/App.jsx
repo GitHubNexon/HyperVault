@@ -26,7 +26,7 @@ function App() {
         draggable
         pauseOnHover
       />
-      <Router basename="/Vault/">
+      <Router basename="/HyperVault/">
         <Routes>
           <Route path="/" element={<Navigation />} />
         </Routes>
