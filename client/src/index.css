@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Orbitron:wght@400..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Orbitron", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   background-size: cover;
@@ -30,28 +30,35 @@ body {
   max-width: 100%;
   width: 100vw;
   box-sizing: border-box;
+  margin: 0;
 }
 
 button {
   background-color: var(--primary-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Add hover effect for the button */
+button:hover {
+  background-color: var(--secondary-color); /* Change to the secondary color */
+  transform: scale(1.05); /* Optional: scale effect on hover */
+}
 a {
   color: var(--secondary-color);
 }
-a:hover  {
+a:hover {
   color: var(--primary-color);
 }
 
 h2 {
   @apply text-xl md:text-4xl;
-  font-family: "Poppins", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 p {
   @apply text-xl tracking-tight leading-relaxed;
-  font-family: "Poppins", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 /* Add hover effect to <a> inside <li> */
@@ -63,8 +70,6 @@ li a {
 li a:hover {
   color: var(--primary-color); /* Color change on hover */
 }
-
-
 
 .fade {
   transition: opacity 1s, visibility 1s !important;
@@ -101,13 +106,13 @@ li a:hover {
 
 /* Style the scrollbar track (the part the thumb slides along) */
 ::-webkit-scrollbar-track {
-  background: #778DA9; /* Background color of the track */
+  background: #778da9; /* Background color of the track */
   border-radius: 10px; /* Rounded corners */
 }
 
 /* Style the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: #E0E1DD;/* Background color of the thumb */
+  background: #e0e1dd; /* Background color of the thumb */
   border-radius: 10px; /* Rounded corners */
 }
 

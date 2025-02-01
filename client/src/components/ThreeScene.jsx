@@ -47,10 +47,10 @@ const ThreeScene = () => {
     "https://raw.githubusercontent.com/GitHubNexon/3D-Models/main/mech_drone/textures/Robot_normal.jpeg"
   ];
   return (
-    <div className="relative h-screen overflow-hidden cursor-grab">
+    <div className="relative w-full h-screen overflow-hidden cursor-grab m-auto">
       <Canvas
         camera={{ position: [-1, 10, -10], fov: 50 }}
-        className="w-full"
+        style={{ width: '100%', height: '100%' }} 
       >
         <Lighting />
         <OrbitControls 
