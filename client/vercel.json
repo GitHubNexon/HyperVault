@@ -1,75 +1,10 @@
 {
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html",
-      "has": [
-        {
-          "type": "extension",
-          "value": "js"
-        },
-        {
-          "type": "extension",
-          "value": "css"
-        },
-        {
-          "type": "extension",
-          "value": "png"
-        },
-        {
-          "type": "extension",
-          "value": "jpg"
-        },
-        {
-          "type": "extension",
-          "value": "jpeg"
-        },
-        {
-          "type": "extension",
-          "value": "gif"
-        },
-        {
-          "type": "extension",
-          "value": "svg"
-        },
-        {
-          "type": "extension",
-          "value": "ico"
-        },
-        {
-          "type": "extension",
-          "value": "woff"
-        },
-        {
-          "type": "extension",
-          "value": "woff2"
-        },
-        {
-          "type": "extension",
-          "value": "ttf"
-        },
-        {
-          "type": "extension",
-          "value": "eot"
-        },
-        {
-          "type": "extension",
-          "value": "json"
-        },
-        {
-          "type": "extension",
-          "value": "mp4"
-        },
-        {
-          "type": "extension",
-          "value": "webp"
-        },
-        {
-          "type": "extension",
-          "value": "zip"
-        }
-      ]
-    }
-  ]
-}
+    "version": 2,
+    "rewrites": [
+      {
+        "source": "/(.*)", 
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
