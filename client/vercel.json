@@ -1,10 +1,9 @@
 {
-    "version": 2,
-    "rewrites": [
-      {
-        "source": "/(.*)", 
-        "destination": "/index.html"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(?!static|.*/.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|json|mp4|webp|zip))",
+      "destination": "/index.html"
+    }
+  ]
+}
