@@ -74,7 +74,11 @@ const Navbar = () => {
               <a
                 href={`#${link.id}`}
                 className="transition duration-300"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  scrollToSection(link.id); 
+                  setIsMenuOpen(false); 
+                }}
               >
                 {link.label}
               </a>
