@@ -5,9 +5,10 @@ const Services = () => {
     <>
       <div
         id="services"
-        className="flex items-center justify-center w-full h-screen"
+        className=" flex items-center  justify-center w-full h-screen"
       >
-        SERVICES PAGE
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+        doloribus.
       </div>
     </>
   );

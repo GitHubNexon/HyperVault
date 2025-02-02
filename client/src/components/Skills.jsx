@@ -89,7 +89,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="max-w-[90vw] mx-auto p-6 grid md:grid-cols-2 gap-8 place-items-center justify-center items-center">
+    <div className="max-w-[90vw] mx-auto p-6 grid md:grid-cols-2 gap-8 place-items-center justify-center items-center" id="skills">
       {projectDetails.map((project, index) => (
         <React.Fragment key={index}>
           {/* Project Image */}

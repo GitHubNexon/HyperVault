@@ -1,24 +1,26 @@
-import React from 'react'
+import React from "react";
 import NavBar from "../Routes/Navbar.jsx";
 import Services from "../pages/Services.jsx";
 import About from "../pages/About";
 import Contact from "../pages/Contact.jsx";
-import Home from '../pages/Home.jsx';
+import Home from "../pages/Home.jsx";
 import Skills from "../components/Skills";
+import Platform from "../pages/Platform.jsx";
 
 const Navigation = () => {
   return (
     <>
-    <div className="overflow-hidden">
-      <NavBar />
-      <Home />
-      <About />
-      <Skills />
-      <Services />
-      <Contact />
-    </div>
-  </>
-  )
-}
+      <div className="overflow-hidden">
+        <NavBar />
+        <Home />
+        <About />
+        <Skills />
+        <Platform />
+        <Services />
+        <Contact />
+      </div>
+    </>
+  );
+};
 
-export default Navigation
+export default Navigation;
