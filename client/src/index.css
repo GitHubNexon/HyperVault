@@ -106,7 +106,7 @@ li a:hover {
 
 /* Style the scrollbar track (the part the thumb slides along) */
 ::-webkit-scrollbar-track {
-  background: #778da9; /* Background color of the track */
+  background: #415A77; /* Background color of the track */
   border-radius: 10px; /* Rounded corners */
 }
 
@@ -118,7 +118,7 @@ li a:hover {
 
 /* Style the scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(62, 221, 62); /* Darker background color when hovered */
+  background: #0D1B2A; /* Darker background color when hovered */
 }
 
 /* Add transition to the height property for smooth expansion/collapse */
