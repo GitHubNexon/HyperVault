@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa"; // Importing react-icons
 
 const navLinks = [
   { id: "home", label: "Home" },
-  { id: "about", label: "About" },
+  { id: "about", label: "About Me" },
   { id: "services", label: "Services" },
   { id: "contact", label: "Contact" },
 ];
@@ -29,9 +29,11 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center justify-between space-x-2">
           <a
-            href="#home"
-            className="text-xl font-bold"
-            onClick={() => scrollToSection("home")}
+            className="text-xl font-bold cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("home");
+            }}
           >
             HyperVault
           </a>
@@ -75,9 +77,9 @@ const Navbar = () => {
                 href={`#${link.id}`}
                 className="transition duration-300"
                 onClick={(e) => {
-                  e.preventDefault(); 
-                  scrollToSection(link.id); 
-                  setIsMenuOpen(false); 
+                  e.preventDefault();
+                  scrollToSection(link.id);
+                  setIsMenuOpen(false);
                 }}
               >
                 {link.label}

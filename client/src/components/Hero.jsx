@@ -10,20 +10,38 @@ const Hero = () => {
 
       {/* Description Section */}
       <div className="absolute top-1/2 transform -translate-y-1/2 text-center mt-8 px-4 max-w-lg w-full z-10 ">
-        <p className="text-[0.9rem] sm:text-xl mb-6">
+        <p
+          className="text-[0.9rem] sm:text-xl mb-6"
+          data-aos="flip-up"
+          data-aos-delay="100"
+        >
           Hi, I'm John Mark Lilio Pulmano — a passionate programmer and tech
           enthusiast dedicated to crafting innovative solutions.
         </p>
         <div className="flex justify-center gap-4">
-          <button className="bg-blue-500 px-6 py-3 rounded-lg text-lg  transition duration-300">
+          <button
+            className=" px-6 py-3 rounded-lg text-lg  transition duration-300"
+            data-aos="flip-up"
+            data-aos-delay="200"
+          >
             Join Me
           </button>
-          <button className="bg-transparent border-2 border-white px-6 py-3 rounded-lg text-lg transition duration-300">
+          <button
+            className="bg-transparent border-2 border-white px-6 py-3 rounded-lg text-lg transition duration-300"
+            data-aos="flip-up"
+            data-aos-delay="300"
+          >
             Contact Me
           </button>
         </div>
       </div>
-      <h2 className="italic text-[1em] text-center">"My projects and workflow run on these trusted brands."</h2>
+      <h2
+        className="italic text-[1em] text-center"
+        data-aos="flip-up"
+        data-aos-delay="400"
+      >
+        "My projects and workflow run on these trusted brands."
+      </h2>
       <div className="mt-10">
         <Carousel />
       </div>
