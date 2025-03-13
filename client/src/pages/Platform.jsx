@@ -12,7 +12,7 @@ const Platform = () => {
   return (
     <>
       <div className="relative w-full h-screen flex flex-col items-center justify-between">
-        <Computer />
+        {/* <Computer /> */}
         {/* Description Section */}
         <div className="absolute top-64 transform -translate-y-1/2 text-center mt-8 px-4 max-w-lg w-full z-10 ">
           <p
