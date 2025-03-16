@@ -2,14 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/index.html",
+      "src": "client/dist/index.html",
       "use": "@vercel/static-build"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "/HyperVault/(.*)",
+      "dest": "/HyperVault/client/dist/$1"
+    },
+    {
+      "src": "/HyperVault",
+      "dest": "/HyperVault/client/dist/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/HyperVault/client/static/js/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" }
+      ]
     }
   ]
 }
