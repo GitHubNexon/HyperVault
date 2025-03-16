@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "rewrites": [
+  "routes": [
+    { "handle": "filesystem" },
     {
-      "source": "/(?!.*\\.js$)(.*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
